@@ -362,7 +362,7 @@ else
 	}
 	IfInString,ReplacementText,`%ds
 	{
-		FormatTime, SDate, , ShortDate
+		FormatTime, SDate, A_Now, MMddyyyy
 		StringReplace, ReplacementText, ReplacementText, `%ds, %SDate%, All
 	}
 	IfInString,ReplacementText,`%dl
